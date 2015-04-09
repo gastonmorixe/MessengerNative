@@ -1,4 +1,4 @@
-![Facebook Messenger](https://cdn.rawgit.com/imton/MessengerNative/c42c6bd4604ed1af435da1f14d977e69539e76d7/render/icon_256x256.png "Facebook Messenger Native!")
+![Facebook Messenger](https://cdn.rawgit.com/imton/MessengerNative/1dba4bb2b7b5e200ddcd58f7ee28db59fe2c8fc9/render/logo_github.png "Facebook Messenger Native!")
 # Messenger Native
 
 ## What is it?
