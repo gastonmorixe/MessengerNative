@@ -1,0 +1,8 @@
+{
+  "name": "messenger-native",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-node-webkit-builder": "latest"
+  }
+}

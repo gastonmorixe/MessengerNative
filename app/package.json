@@ -1,0 +1,11 @@
+{
+  "name": "Messenger Native",
+  "version": "1.0.0",
+  "main": "index.html",
+  "window": {
+    "frame": false,
+    "toolbar": false,
+    "width": 900,
+    "height": 650
+  }
+}
