@@ -12,4 +12,9 @@ A native chromeless & frameless window wrapper around the new www.messenger.com
 $ npm install && grunt nodewebkit
 ````
 
-### HELP NEEDED! PULL REQUESTS WELCOME!  :)
+--
+
+
+### HELP NEEDED! 
+
+PULL REQUESTS + TESTING + FEEDBACK + ISSUES WELCOME!  :)
