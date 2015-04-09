@@ -2,8 +2,8 @@ var os = require('os');
 
 module.exports = function(grunt) {
 
-  var isWindows = os.platform().indexOf('win') !== -1;
-  var platform = isWindows ? 'win' : 'osx';
+  var isOSX = os.platform().indexOf('darwin') !== -1;
+  var platform = isOSX ? 'osx' : 'win';
 
   grunt.initConfig({
     nodewebkit: {
