@@ -8,11 +8,31 @@ body{ -webkit-app-region: drag; }
 #wv1{ width: 100%; height: 100%; }
 </style>
 <script>
+var url = require('url');
 var nw = require('nw.gui');
 var win = nw.Window.get();
 var nativeMenuBar = new nw.Menu({ type: "menubar" });
-nativeMenuBar.createMacBuiltin("Messenger Native");
+if (nativeMenuBar.createMacBuiltin) {
+  nativeMenuBar.createMacBuiltin("Messenger Native");
+}
 win.menu = nativeMenuBar;
+
+window.onload = function() {
+  document.getElementById('wv1').addEventListener('newwindow', function(e) {
+    var urlObj = url.parse(e.targetUrl, true);
+    if (urlObj.host.indexOf('facebook') !== -1) {
+      nw.Shell.openExternal(e.targetUrl);
+      return;
+    }
+
+    // If the link is external, facebook wraps it in a link to an intermediate
+    // url which asks if you really want to leave.  This just skips that step.
+    var realUrl = urlObj.query.u;
+    if (realUrl) {
+      nw.Shell.openExternal(realUrl);
+    }
+  });
+};
 </script>
 </head>
 <body>
